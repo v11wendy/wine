@@ -23,12 +23,13 @@ function WineShopHeader() {
         <NavLink to="/" className="header-title">Happy</NavLink>
 
        
-
-        <NavLink to="/cart" className="header-cart-link">
-          <div className="header-cart-block">
-          <div className="nav-login-cart">
+        <div className="header-cart-test">
+        <div className="nav-login-cart">
        <Link to='/login'><button>Login</button></Link>  
              </div>
+        <NavLink to="/cart" className="header-cart-link">
+          <div className="header-cart-block">
+       
             <div className="header-cart-text">
               Cart
             </div>
@@ -52,6 +53,7 @@ function WineShopHeader() {
             </div>
           </div>
         </NavLink>
+        </div>
       </header>
     );
   }, [itemsAmount]
