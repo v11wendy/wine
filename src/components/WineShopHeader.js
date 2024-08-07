@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import "./WineShopHeader.css";
 
@@ -26,8 +27,8 @@ function WineShopHeader() {
         <NavLink to="/cart" className="header-cart-link">
           <div className="header-cart-block">
           <div className="nav-login-cart">
-    <Link to='/login'><button>Login</button></Link>  
-</div>
+       <Link to='/login'><button>Login</button></Link>  
+             </div>
             <div className="header-cart-text">
               Cart
             </div>
