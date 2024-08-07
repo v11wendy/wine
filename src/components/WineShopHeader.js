@@ -25,6 +25,9 @@ function WineShopHeader() {
 
         <NavLink to="/cart" className="header-cart-link">
           <div className="header-cart-block">
+          <div className="nav-login-cart">
+    <Link to='/login'><button>Login</button></Link>  
+</div>
             <div className="header-cart-text">
               Cart
             </div>
