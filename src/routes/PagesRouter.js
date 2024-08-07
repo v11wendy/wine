@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import { PageMain } from "../pages/PageMain";
 import { PageCart } from "../pages/PageCart";
+import { LoginSignup } from "../pages/LoginSignup";
 
 function PagesRouter( {cbChangedFilter, cbChangedSort, cbChangeOutputType, loadState, wineItemCode, loadError, isShowPages,
   winesArrLength, winesPerPage, cbPaginate, currentPage} ) {
@@ -80,6 +81,7 @@ function PagesRouter( {cbChangedFilter, cbChangedSort, cbChangeOutputType, loadS
           />}
         />
         <Route path="/cart" element={<PageCart/>} />
+        <Route path='/login' element={<LoginSignup/>} />
       </Routes>
     );
   }
